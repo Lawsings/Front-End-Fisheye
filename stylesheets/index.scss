@@ -1,0 +1,282 @@
+// GENERAL
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+.flex{
+    display:flex;
+}
+
+.hidden{
+    display: none;
+}
+
+// COULEURS
+$primary-color: #901C1C;
+$secondary-color: #D3573C;
+
+// VERSION DESKTOP
+
+// BODY - VERSION DESKTOP
+body{
+    margin: 2em 3em 0em 3em;
+    padding: 0;
+    font-family: DM Sans;
+}
+
+    // HEADER - VERSION DESKTOP
+    header{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 10em;
+        
+            img{
+                width: 150px;
+            }
+        }
+
+        // FILTRES DE NAVIGATION - VERSION DESKTOP
+        nav{
+            display: inline-block;
+            text-align: center;
+            margin:0;
+            flex-wrap: wrap;
+            margin-right: 5em;
+            margin-left:5em;
+            line-height: 1.8em;
+
+            button{
+                padding:2px 10px;
+                border: 1px solid lightgrey;
+                border-radius: 1em;
+                font-size: 0.7em;
+                font-weight: 500;
+                text-decoration: none;
+                color:$primary-color;
+                background-color: white;
+            }
+
+            :hover, .active{
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+
+        h1{
+            font-size: 1.5em;
+            font-weight: 300;
+            color:$primary-color;
+            text-align: right;
+        }
+    }
+
+    // MAIN - VERSION DESKTOP
+    #main-photographers-button{
+        position: fixed;
+        text-align: center;
+        width: 140px;
+        padding:3px;
+        top:5px;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $secondary-color;
+        color: black;
+        text-decoration: none;
+        border-radius: 0.2em;
+        font-weight: 500;
+        font-size: 0.9em;
+        border: none;
+    }
+
+    main{
+
+        #photographers{
+            margin-top: 4em;
+            display:flex;
+            flex-flow: row wrap;
+            width: auto;
+            justify-content: space-around;
+
+            article{
+                margin-bottom: 2em;
+                text-align: center;
+                width: 25vw;
+                flex-flow: column wrap;
+
+
+                a{
+                    text-decoration: none;
+
+                    img{
+                        height:12em;
+                        width: 12em;
+                        object-fit: cover;
+                        overflow: hidden;
+                        border-radius: 10em;
+                        box-shadow: 0px 3px 10px grey; ;
+                    }
+
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 300;
+                        font-size: 1.8em;
+                        color: $secondary-color;
+                    }
+                }
+        
+                .location{
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 100;
+                    font-size: 0.8em;
+                    color:$primary-color;
+                }
+
+                .tagline{
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 100;
+                    font-size: 0.7em;
+                }
+
+                .price{
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 100;
+                    font-size: 0.6em;
+                    color: grey;
+                }
+
+                .filter{
+                    margin: 0;
+                    margin-top:0.5em;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    list-style-type: none;
+
+                    li{
+                        margin-right: 5px;
+                        padding:2px 10px;
+                        border: 1px solid lightgrey;
+                        border-radius: 1em;
+                        font-size: 0.7em;
+                        font-weight: 500;
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+// VERSION MOBILE
+@media (max-width: 700px){
+    body{
+        margin: 2em 1.5em 1em 1.5em;
+    }
+
+    // HEADER - VERSION MOBILE
+    header{
+
+        flex-wrap: wrap;
+
+        .logo { 
+            order: 1; 
+            width: 50%;
+
+            img{
+                width: 150px;
+            }
+        }
+
+        nav { 
+            order: 2; 
+            margin-top:1.5em;
+            margin-bottom:2.5em;
+            margin-right: 2em;
+            margin-left:2em;
+        }
+
+        h1 { 
+            order: 1; 
+            width: 50%;
+            font-size: 1em;
+            text-align: right;
+        }
+
+    }
+
+    // MAIN - VERSION MOBILE
+    main{
+
+        #photographers{
+            margin-top: 0em;
+            flex-flow: column wrap;
+            justify-content: center;
+
+            article{
+                width: auto;
+            }
+        }
+    }
+}
+
+// VERSION TABLETTE
+@media (min-width: 701px) and (max-width:1000px){
+    body{
+        margin: 2em 1.5em 1em 1.5em;
+        padding:0;
+    }
+
+    // HEADER - VERSION TABLETTE
+    header{
+
+        flex-wrap: wrap;
+
+        .logo { 
+            order: 1; 
+            width: 50%;
+
+            img{
+                width: 150px;
+            }
+        }
+
+        nav { 
+            order: 2; 
+            margin-top:1.5em;
+            margin-bottom:2.5em;
+            margin-right: auto;
+            margin-left:auto;
+        }
+
+        h1 { 
+            order: 1; 
+            width: 50%;
+            font-size: 1em;
+            text-align: right;
+        }
+    }
+
+    // MAIN - VERSION TABLETTE
+    main{
+        
+        #photographers{
+            margin-top: 1em;
+
+            article{
+                width: 40vw;
+            }
+        }
+    }
+}
+
