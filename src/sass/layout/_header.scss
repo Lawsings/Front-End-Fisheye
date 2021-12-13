@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+h1 {
+    color: var(--primary-dark-red);
+    font-size: 36px;
+    margin-right: 100px;
+
+    @include media-query('tablets') {
+        margin-right: 50px;
+        font-size: 24px;
+    }
+
+    @include media-query('mobile') {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+.logo {
+    height: 50px;
+    margin-left: 120px;
+
+    @include media-query('tablets') {
+        height: 50px;
+        margin-left: 60px;
+    }
+
+    @include media-query('mobile') {
+        height: 40px;
+        margin: 0;
+    }
+}

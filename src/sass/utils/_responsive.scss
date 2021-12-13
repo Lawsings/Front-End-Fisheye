@@ -1,0 +1,12 @@
+$breakpoints: (
+    'mobile-xs': 320px,
+    'mobile': 600px,
+    'tablets': 1065px,
+);
+
+@mixin media-query($key) {
+    $size: map-get($breakpoints, $key);
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}

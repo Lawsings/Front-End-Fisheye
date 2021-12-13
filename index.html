@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye</title>
-  </head>
-  <body>
-    <header>
-        <img src="assets/images/logo.png" class="logo" />
-        <h1>Nos photographes</h1>
-    </header>
-    <main id="main">
-        <div class="photographer_section"></div>
-    </main>
-    <script src="scripts/factories/Photographer.js"></script>
-    <script src="scripts/pages/index.js"></script>
-    <script src="scripts/pages/main.js"></script>
-    <script src="scripts/pages/photographer.js"></script>
-  </body>
+<html lang="fr">
+    <head>
+        <link href="public/css/style.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="icon" type="image/png" href="public/assets/favicon.png" /> -->
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+        <title>Fisheye</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" title="Fisheye Home Page" class="logo">
+                <img src="public/assets/images/logo.png" alt="Fisheye page d'acceuil" />
+            </a>
+            <h1>Nos photographes</h1>
+        </header>
+        <main id="main">
+            <div class="photographersSection"></div>
+        </main>
+
+        <script type="module" src="public/scripts/controller/home.js"></script>
+    </body>
 </html>

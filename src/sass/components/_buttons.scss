@@ -1,0 +1,29 @@
+@mixin button {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 69px;
+    border: none;
+    background-color: var(--primary-dark-red);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+
+    // @include media-query('tablets') {
+    //     position: fixed;
+    //     bottom: 10px;
+    //     left: 50%;
+    //     z-index: 3;
+    //     transform: translateX(-50%);
+    //     height: auto;
+    //     width: auto;
+    // }
+
+    &:hover,
+    &:focus {
+        color: #000;
+        background: var(--secondary-light-red);
+    }
+}

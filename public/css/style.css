@@ -1,0 +1,196 @@
+/* * * * * * */
+/* Reset CSS */
+/* * * * * * */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+header {
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  border: none;
+}
+
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  font-size: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  max-width: 1440px;
+}
+@media screen and (max-width: 1065px) {
+  body {
+    width: 95%;
+  }
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+#main {
+  padding-bottom: 75px;
+}
+
+/* * * * * * * * */
+/* Variables CSS */
+/* * * * * * * * */
+:root {
+  --primary-dark-red: #901c1c;
+  --primary-light-red: #d3573c;
+  --secondary-dark-gray: #525252;
+  --secondary-light-gray: #fafafa;
+  --secondary-light-red: #db8876;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+h1 {
+  color: var(--primary-dark-red);
+  font-size: 36px;
+  margin-right: 100px;
+}
+@media screen and (max-width: 1065px) {
+  h1 {
+    margin-right: 50px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.logo {
+  height: 50px;
+  margin-left: 120px;
+}
+@media screen and (max-width: 1065px) {
+  .logo {
+    height: 50px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 40px;
+    margin: 0;
+  }
+}
+
+.photographersSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.photographersSection__profile {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1065px) {
+  .photographersSection__profile {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .photographersSection__profile {
+    flex-basis: 100%;
+  }
+}
+.photographersSection__profile__link {
+  text-align: center;
+}
+.photographersSection__profile__link__picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+.photographersSection__profile__link__name {
+  color: var(--primary-light-red);
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.photographersSection__profile p {
+  line-height: 1.6;
+}
+.photographersSection__profile__location {
+  font-size: 13px;
+  color: var(--primary-dark-red);
+}
+.photographersSection__profile__description {
+  font-size: 10px;
+}
+.photographersSection__profile__price {
+  font-size: 9px;
+  color: var(--secondary-dark-gray);
+}
+
+/*# sourceMappingURL=style.css.map */

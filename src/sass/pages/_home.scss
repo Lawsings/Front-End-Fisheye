@@ -1,0 +1,61 @@
+// CSS
+
+.photographersSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+    &__profile {
+        flex-basis: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+
+        @include media-query('tablets') {
+            flex-basis: 50%;
+        }
+
+        @include media-query('mobile') {
+            flex-basis: 100%;
+        }
+
+        &__link {
+            text-align: center;
+
+            &__picture {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.25);
+                margin: 0 auto;
+            }
+
+            &__name {
+                color: var(--primary-light-red);
+                font-size: 36px;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        &__location {
+            font-size: 13px;
+            color: var(--primary-dark-red);
+        }
+
+        &__description {
+            font-size: 10px;
+        }
+
+        &__price {
+            font-size: 9px;
+            color: var(--secondary-dark-gray);
+        }
+    }
+}

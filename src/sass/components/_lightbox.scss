@@ -1,0 +1,97 @@
+@mixin lightBox {
+    .lightBoxModal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 13;
+        // overflow: scroll;
+
+        &__nextButton,
+        &__prevButton {
+            cursor: pointer;
+            color: transparent;
+            background: url(../assets/icons/right-arrow-red.svg) center center / 30px 48px no-repeat;
+            width: 110px;
+            height: 100%;
+            margin-top: 7px;
+            z-index: 11;
+
+            @include media-query('tablets') {
+                width: 65px;
+                background-size: 15px 24px;
+            }
+
+            @include media-query('mobile') {
+                width: 35px;
+                background-size: 10px 18px;
+            }
+        }
+
+        &__prevButton {
+            right: auto;
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+        &__mainContainer {
+            position: relative;
+        }
+
+        &__imgContainer {
+        }
+
+        &__media {
+            border-radius: 5px;
+            width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            object-position: 50% 30%;
+            z-index: 12;
+            position: relative;
+        }
+
+        &__closeButton {
+            cursor: pointer;
+            color: transparent;
+            right: 0;
+            width: 42px;
+            height: 42px;
+            background: url(../assets/icons/close-red.svg) center center / 42px 42px no-repeat;
+            z-index: 12;
+            position: absolute;
+            top: 0;
+            right: -70px;
+
+            @include media-query('tablets') {
+                width: 21px;
+                height: 21px;
+                background-size: 21px 21px;
+                right: -35px;
+            }
+
+            @include media-query('mobile') {
+                width: 15px;
+                height: 15px;
+                background-size: 15px 15px;
+                right: -25px;
+            }
+        }
+
+        &__mediaDesc {
+            color: var(--primary-dark-red);
+            font-size: 24px;
+            margin-top: 14px;
+
+            @include media-query('mobile') {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

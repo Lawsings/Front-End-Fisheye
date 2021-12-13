@@ -1,0 +1,10 @@
+@mixin rotateArrow {
+    @keyframes rotateArrow {
+        from {
+            rotate: (0deg);
+        }
+        to {
+            rotate: (180deg);
+        }
+    }
+}
