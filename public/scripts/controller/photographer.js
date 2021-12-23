@@ -1,8 +1,9 @@
 import GetPhotographers from '../models/GetPhotographers.js';
 import GetMedias from '../models/GetMedias.js';
+import SwitchContactModal from '../utils/switchContactForm.js';
 import Likes from '../utils/Likes.js';
 import BuildPhotographerPage from '../models/builders/BuildPhotographerPage.js';
-
+import OpenLightBoxModal from '../utils/OpenLightboxModal.js';
 
 class App {
     constructor() {
@@ -36,6 +37,12 @@ class App {
 
         // Build page
         new BuildPhotographerPage(this._store);
+
+        // Handle events : contact Form Modal
+        new SwitchContactModal().addListeners();
+
+        // Handle events : lightbox modal on each media
+        new OpenLightBoxModal().addListeners(this._store);
 
         // Handle events : likes system
         new Likes(this._store).init();
