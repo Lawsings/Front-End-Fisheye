@@ -15,6 +15,46 @@
             </a>
         </header>
         <main id="main"></main>
+        <section class="contactModal" aria-labelledby="contact-modal-title">
+            <div class="contactModal__content">
+                <header class="contactModal__content__header">
+                    <h2 class="contactModal__content__header__title" id="contact-modal-title">Contactez-moi Mimi Keel</h2>
+                    <a
+                        class="contactModal__content__header__closeIcon"
+                        href="#"
+                        title="Fermer le formulaire"
+                        aria-label="Fermer la fenêtre"
+                    ></a>
+                    <!-- <img class="contactModal__content__header__closeIcon" src="public/assets/icons/close.svg" alt="Fermer la fenêtre" /> -->
+                </header>
+                <form class="contactModal__content__form">
+                    <div class="contactModal__content__form__field">
+                        <label class="contactModal__content__form__label" for="firstname">Prénom</label>
+                        <input class="contactModal__content__form__input" type="text" name="firstname" id="firstname" />
+                    </div>
+                    <div class="contactModal__content__form__field">
+                        <label class="contactModal__content__form__label" for="name">Nom</label>
+                        <input class="contactModal__content__form__input" type="text" name="name" id="name" />
+                    </div>
+                    <div class="contactModal__content__form__field">
+                        <label class="contactModal__content__form__label" for="email">Email</label>
+                        <input class="contactModal__content__form__input" type="text" name="email" id="email" />
+                    </div>
+                    <div class="contactModal__content__form__field">
+                        <label class="contactModal__content__form__label" for="textarea">Votre message</label>
+                        <textarea
+                            class="contactModal__content__form__textaera"
+                            name="textarea"
+                            id="textarea"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <button class="contactModal__content__form__submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
         <script type="module" src="public/scripts/controller/photographer.js"></script>
     </body>
 </html>
