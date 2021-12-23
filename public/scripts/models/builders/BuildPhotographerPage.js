@@ -1,4 +1,5 @@
 import PhotographerProfileLarge from '../../templates/PhotographerProfileLarge.js';
+import FilterForm from '../../templates/FilterForm.js';
 import DisplayMediaSection from '../../templates/DisplayMediaSection.js';
 
 export default class BuildPhotographerPage {
