@@ -216,7 +216,7 @@ export default class FilterForm {
                     this.applyChanges();
                     break;
             }
-        })
+        });
     }
 
     render() {
